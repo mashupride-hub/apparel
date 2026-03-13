@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アパレル宅配買取なら万代｜ブランド服を箱に詰めて送るだけ</title>
+    <meta name="description" content="ブランド服・ストリート・セレクト系アパレルの宅配買取なら万代。送料無料、かんたん申込、自宅から発送OK。買取実績も掲載中。">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                <img src="img/logo.svg" alt="万代" width="120" height="40">
+            </div>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li><a href="#results">買取実績</a></li>
+                    <li><a href="#features">メリット</a></li>
+                    <li><a href="#flow">流れ</a></li>
+                    <li><a href="#faq">よくある質問</a></li>
+                </ul>
+            </nav>
+            <div class="header__cta-pc">
+                <a href="#contact" class="btn btn--primary btn--small">無料査定に申し込む</a>
+            </div>
+            <!-- ハンバーガーメニューボタン -->
+            <button class="header__hamburger u-sp-only" id="js-hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SP用ドロワーメニュー -->
+    <div class="sp-menu" id="js-sp-menu">
+        <div class="sp-menu__header">
+            <div class="sp-menu__logo">
+                <img src="img/logo.svg" alt="万代" width="100">
+            </div>
+            <button class="sp-menu__close" id="js-menu-close" aria-label="メニューを閉じる">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="sp-menu__nav">
+            <ul class="sp-menu__list">
+                <li><a href="#results">買取実績</a></li>
+                <li><a href="#features">メリット</a></li>
+                <li><a href="#flow">流れ</a></li>
+                <li><a href="#faq">よくある質問</a></li>
+                <li class="sp-menu__cta"><a href="#contact" class="btn btn--primary">無料で宅配買取を申し込む</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- ① ファーストビュー -->
+        <section class="hero" id="hero">
+            <div class="hero__inner">
+                <div class="hero__body" data-aos="fade-up">
+                    <p class="hero__lead">着なくなったブランド服、箱に詰めて送るだけ。</p>
+                    <h1 class="hero__title">万代の宅配買取なら、<br>送料無料・かんたん申込<br>自宅まで無料集荷</h1>
+                    <ul class="hero__points">
+                        <li>送料無料</li>
+                        <li>かんたん申込</li>
+                        <li>ブランドアパレル買取強化中</li>
+                    </ul>
+                    <div class="hero__cta">
+                        <a href="#contact" class="btn btn--primary btn--large">無料で宅配買取を申し込む</a>
+                        <p class="hero__note">送料・査定料すべて0円</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- キャンペーンスライダー (全幅・画像ベース) -->
+        <section class="campaign-slider">
+            <div class="campaign-swiper swiper" data-aos="fade">
+                <div class="swiper-wrapper">
+                    <!-- スライド1 -->
+                    <div class="swiper-slide">
+                        <a href="#contact" class="campaign-banner campaign-banner--01">
+                            <span class="u-visually-hidden">初回買取申込キャンペーン 査定金額20%UP</span>
+                        </a>
+                    </div>
+                    <!-- スライド2 -->
+                    <div class="swiper-slide">
+                        <a href="#flow" class="campaign-banner campaign-banner--02">
+                            <span class="u-visually-hidden">全国送料無料 梱包キット・集荷すべて0円</span>
+                        </a>
+                    </div>
+                    <!-- スライド3 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="campaign-banner campaign-banner--03">
+                            <span class="u-visually-hidden">万代オンラインショップ ブランド古着がお得に購入可能</span>
+                        </a>
+                    </div>
+                    <!-- スライド4 -->
+                    <div class="swiper-slide">
+                        <a href="#contact" class="campaign-banner campaign-banner--04">
+                            <span class="u-visually-hidden">買取強化ブランド公開中 1点ずつ丁寧に査定</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- ページネーション -->
+                <div class="swiper-pagination campaign-pagination"></div>
+                <!-- ナビゲーションボタン (PCのみ) -->
+                <div class="swiper-button-prev campaign-prev u-pc-only"></div>
+                <div class="swiper-button-next campaign-next u-pc-only"></div>
+            </div>
+        </section>
+
+        <!-- ② 買取実績 -->
+        <section class="results" id="results">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <h2 class="section-heading__title">買取実績</h2>
+                    <p class="section-heading__subtitle">最新の買取事例をご紹介します</p>
+                </div>
+                <div class="results__slider swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper" id="results-wrapper">
+                        <!-- JSで動的に、または手動で追加 -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="results__more" data-aos="fade-up">
+                    <a href="#" class="btn btn--outline">もっと見る</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ③ 宅配買取のメリット紹介 -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <h2 class="section-heading__title">万代の宅配買取が<br class="u-sp-only">選ばれる理由</h2>
+                </div>
+                <div class="features__list">
+                    <article class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-card__icon">
+                            <img src="img/icon-home.svg" alt="自宅から送れる">
+                        </div>
+                        <h3 class="feature-card__title">自宅から一歩も出ずに<br>買取完了</h3>
+                        <p class="feature-card__text">重い荷物を店舗に運ぶ手間はありません。箱に詰めて自宅から発送するだけで完了します。</p>
+                    </article>
+                    <article class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-card__icon">
+                            <img src="img/icon-truck.svg" alt="送料無料">
+                        </div>
+                        <h3 class="feature-card__title">送料・査定料・<br>キャンセル料すべて0円</h3>
+                        <p class="feature-card__text">お客様にご負担いただく費用は一切ありません。査定額にご納得いただけない場合の返送料も無料です。</p>
+                    </article>
+                    <article class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-card__icon">
+                            <img src="img/icon-search.svg" alt="専門査定員">
+                        </div>
+                        <h3 class="feature-card__title">アパレル専門査定員が<br>1点ずつ丁寧に査定</h3>
+                        <p class="feature-card__text">市場相場を熟知した専門のスタッフが、ブランドの価値を正当に評価し高価買取いたします。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ④ 宅配買取の流れ -->
+        <section class="flow" id="flow">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <h2 class="section-heading__title">宅配買取の流れ</h2>
+                    <p class="section-heading__subtitle">かんたん5ステップで完了します</p>
+                </div>
+                <ol class="flow__list">
+                    <li class="flow__item" data-aos="fade-right" data-aos-delay="100">
+                        <div class="flow__num">01</div>
+                        <div class="flow__body">
+                            <h3 class="flow__title">フォームから申込</h3>
+                            <p class="flow__text">スマホやPCから、必要事項を入力してお申し込みください。</p>
+                        </div>
+                    </li>
+                    <li class="flow__item" data-aos="fade-right" data-aos-delay="200">
+                        <div class="flow__num">02</div>
+                        <div class="flow__body">
+                            <h3 class="flow__title">箱に詰める</h3>
+                            <p class="flow__text">売りたいお品物を、お手持ちの箱または無料キットに梱包してください。</p>
+                        </div>
+                    </li>
+                    <li class="flow__item" data-aos="fade-right" data-aos-delay="300">
+                        <div class="flow__num">03</div>
+                        <div class="flow__body">
+                            <h3 class="flow__title">発送する</h3>
+                            <p class="flow__text">ご指定の日時に配送業者が集荷にお伺いします。着払いで発送してください。</p>
+                        </div>
+                    </li>
+                    <li class="flow__item" data-aos="fade-right" data-aos-delay="400">
+                        <div class="flow__num">04</div>
+                        <div class="flow__body">
+                            <h3 class="flow__title">査定結果を確認</h3>
+                            <p class="flow__text">お品物到着後、最短即日で査定結果をメールにてお知らせします。</p>
+                        </div>
+                    </li>
+                    <li class="flow__item" data-aos="fade-right" data-aos-delay="500">
+                        <div class="flow__num">05</div>
+                        <div class="flow__body">
+                            <h3 class="flow__title">成約・入金</h3>
+                            <p class="flow__text">査定金額にご納得いただけましたら、即お振込手続きをいたします。</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ⑤ 買取強化ブランド一覧 -->
+        <section class="brands" id="brands">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <h2 class="section-heading__title">買取強化ブランド</h2>
+                </div>
+                <ul class="brands__list" data-aos="fade-up" data-aos-delay="100">
+                    <li class="brands__item">Supreme</li>
+                    <li class="brands__item">STUSSY</li>
+                    <li class="brands__item">NIKE</li>
+                    <li class="brands__item">THE NORTH FACE</li>
+                    <li class="brands__item">BURBERRY</li>
+                    <li class="brands__item">COMME des GARÇONS</li>
+                    <li class="brands__item">Maison Margiela</li>
+                    <li class="brands__item">A BATHING APE</li>
+                    <li class="brands__item">Stone Island</li>
+                    <li class="brands__item">Off-White</li>
+                    <li class="brands__item">Balenciaga</li>
+                    <li class="brands__item">GUCCI</li>
+                    <li class="brands__item">Louis Vuitton</li>
+                    <li class="brands__item">Moncler</li>
+                    <li class="brands__item">Adidas</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 他商材へのリンク (オリジナリティを追求した新デザイン) -->
+        <section class="other-categories">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <h2 class="section-heading__title">万代はアパレル以外も<br class="u-sp-only">専門買取いたします</h2>
+                    <p class="section-heading__subtitle">それぞれの専門スタッフが、一点ずつ丁寧に査定。他商材もまとめてお任せください。</p>
+                </div>
+                <div class="category-portal">
+                    <!-- ゲーム -->
+                    <a href="#" class="portal-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="portal-card__image">
+                            <img src="img/category_games.png" alt="ゲーム買取">
+                        </div>
+                        <div class="portal-card__content">
+                            <div class="portal-card__label">GAMES</div>
+                            <h3 class="portal-card__title">ゲーム機・ソフト</h3>
+                            <p class="portal-card__text">最新機種からレトロゲームまで、幅広く高価買取中。</p>
+                            <span class="portal-card__link">専門ページを見る</span>
+                        </div>
+                    </a>
+                    <!-- トレカ -->
+                    <a href="#" class="portal-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="portal-card__image">
+                            <img src="img/category_trading_card.png" alt="トレカ買取">
+                        </div>
+                        <div class="portal-card__content">
+                            <div class="portal-card__label">TRADING CARDS</div>
+                            <h3 class="portal-card__title">トレーディングカード</h3>
+                            <p class="portal-card__text">専門査定員が市場価値を正確に評価。レアカード大歓迎。</p>
+                            <span class="portal-card__link">専門ページを見る</span>
+                        </div>
+                    </a>
+                    <!-- おもちゃ -->
+                    <a href="#" class="portal-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="portal-card__image">
+                            <img src="img/category_toys.png" alt="フィギュア・プラモ買取">
+                        </div>
+                        <div class="portal-card__content">
+                            <div class="portal-card__label">TOYS & FIGURES</div>
+                            <h3 class="portal-card__title">おもちゃ・フィギュア</h3>
+                            <p class="portal-card__text">プラモ、ソフビ、超合金など、ホビー全般を専門査定。</p>
+                            <span class="portal-card__link">専門ページを見る</span>
+                        </div>
+                    </a>
+                    <!-- ブランド -->
+                    <a href="#" class="portal-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="portal-card__image">
+                            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=400&h=300&fit=crop" alt="ブランド品・服飾品買取">
+                        </div>
+                        <div class="portal-card__content">
+                            <div class="portal-card__label">BRAND ITEMS</div>
+                            <h3 class="portal-card__title">ブランドバッグ・時計</h3>
+                            <p class="portal-card__text">ハイブランドからヴィンテージまで、確かな目利きで査定。</p>
+                            <span class="portal-card__link">専門ページを見る</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ⑥ 中間CTA -->
+        <section class="cta cta--mid">
+            <div class="container">
+                <div class="cta__body" data-aos="zoom-in">
+                    <p class="cta__lead">まずは無料で宅配買取を申し込む</p>
+                    <h2 class="cta__title">送料・査定料無料でかんたんスタート</h2>
+                    <div class="cta__button">
+                        <a href="#contact" class="btn btn--primary btn--large">無料で申し込む</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ⑦ 自社ECサイトへの導線バナー -->
+        <section class="ec-banner">
+            <div class="container">
+                <a href="#" class="ec-banner__link" data-aos="fade-up">
+                    <div class="ec-banner__inner">
+                        <div class="ec-banner__body">
+                            <p class="ec-banner__lead">ブランド古着・人気アイテムを販売中</p>
+                            <h2 class="ec-banner__title">万代オンラインショップはこちら</h2>
+                        </div>
+                        <div class="ec-banner__button">
+                            <span class="btn btn--secondary btn--small">ショップを見る</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ⑧ 宅配買取紹介文 -->
+        <section class="about">
+            <div class="container">
+                <div class="about__inner" data-aos="fade-up">
+                    <h2 class="about__title">万代の宅配買取とは</h2>
+                    <div class="about__content">
+                        <p>万代の宅配買取サービスは、お忙しい方や遠方の方でも、手軽にブランド衣類をお売りいただけるサービスです。店頭に足を運ぶ必要がなく、ご自宅にある箱に詰めて送るだけで、専門の査定員が一点一点丁寧に査定いたします。
+                        </p>
+                        <h3>店頭に行かずに売れるメリット</h3>
+                        <p>重たいお品物を持ち運ぶ必要がなく、全国どこからでもご利用いただけます。また、対面でのやり取りが苦手な方でも、メールやマイページ上でスムーズに完結させることが可能です。</p>
+                        <h3>どんな人に向いているか</h3>
+                        <p>「断捨離をして一気に片付けたい」「近くにブランド古着の専門店がない」「忙しくてお店に行く時間がない」といった方に最適です。最新のストリートブランドからハイブランド、セレクトショップ取り扱いブランドまで幅広く対応しております。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [NEW] お客様の声 -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <h2 class="section-heading__title">お客様の声</h2>
+                    <p class="section-heading__subtitle">多くの方にご満足いただいています</p>
+                </div>
+                <div class="reviews__list">
+                    <article class="review-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="review-card__header">
+                            <span class="review-card__user">30代 男性 / 会社員</span>
+                            <div class="review-card__stars">★★★★★</div>
+                        </div>
+                        <h3 class="review-card__title">「クローゼットがスッキリしました！」</h3>
+                        <p class="review-card__text">引っ越しを機に大量の服を送りました。店頭に運ぶのは大変だったので、自宅まで集荷に来てくれるのは本当に助かりました。ブランド品だけでなくセレクトショップの服も高く買ってもらえて満足です。</p>
+                    </article>
+                    <article class="review-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="review-card__header">
+                            <span class="review-card__user">20代 女性 / 主婦</span>
+                            <div class="review-card__stars">★★★★★</div>
+                        </div>
+                        <h3 class="review-card__title">「対応が早くて安心できました」</h3>
+                        <p class="review-card__text">送った翌日には査定結果が届き、そのスピードに驚きました。キャンセルも無料とのことだったので安心して申し込めましたが、予想以上の金額だったのでそのまま買取をお願いしました。</p>
+                    </article>
+                    <article class="review-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="review-card__header">
+                            <span class="review-card__user">40代 男性 / 自営業</span>
+                            <div class="review-card__stars">★★★★★</div>
+                        </div>
+                        <h3 class="review-card__title">「専門的な査定に納得」</h3>
+                        <p class="review-card__text">限定モデルのスニーカーや古着の価値もしっかり分かってもらえました。他店では安く見積もられたものも、ここでは適正な価格をつけてもらえ、専門性の高さを感じました。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- [NEW] 状態に関する案内 -->
+        <section class="condition">
+            <div class="container">
+                <div class="condition__inner" data-aos="fade-up">
+                    <div class="section-heading">
+                        <h2 class="section-heading__title">こんな状態でもOK！</h2>
+                    </div>
+                    <ul class="condition__list">
+                        <li>多少の汚れがある</li>
+                        <li>箱や付属品がない</li>
+                        <li>発売から時間が経っている</li>
+                        <li>季節外のアイテム</li>
+                    </ul>
+                    <p class="condition__note">※著しい破損や模倣品などは買取できない場合がございます。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ⑨ よくある質問 -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <h2 class="section-heading__title">よくある質問</h2>
+                </div>
+                <dl class="faq__list">
+                    <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
+                        <dt class="faq__question">送料はかかりますか？</dt>
+                        <dd class="faq__answer">いいえ、送料・査定料・振込手数料、さらにはキャンセル時の返送料まですべて万代が負担いたします。お客様の費用負担は一切ございません。</dd>
+                    </div>
+                    <div class="faq__item" data-aos="fade-up" data-aos-delay="200">
+                        <dt class="faq__question">査定だけでも大丈夫ですか？</dt>
+                        <dd class="faq__answer">はい、査定のみでも大歓迎です。金額にご納得いただけなければ無料でキャンセルいただけます。</dd>
+                    </div>
+                    <div class="faq__item" data-aos="fade-up" data-aos-delay="300">
+                        <dt class="faq__question">ノーブランドも送れますか？</dt>
+                        <dd class="faq__answer">恐れ入りますが、宅配買取ではブランドお品物を対象とさせていただいております。一部対象外もございますので、詳細はお問い合わせください。</dd>
+                    </div>
+                    <div class="faq__item" data-aos="fade-up" data-aos-delay="400">
+                        <dt class="faq__question">査定結果に納得できなかった場合は？</dt>
+                        <dd class="faq__answer">ご納得いただけない場合は、1点から返却可能です。返送時の送料も弊社が負担いたしますのでご安心ください。</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- ⑩ 最終CTA -->
+        <section class="cta cta--last">
+            <div class="container">
+                <div class="cta__body" data-aos="zoom-in">
+                    <p class="cta__lead">着なくなった服を、今すぐかんたん宅配買取</p>
+                    <h2 class="cta__title">無料で宅配買取に申し込む</h2>
+                    <div class="cta__button">
+                        <a href="#contact" class="btn btn--primary btn--xlarge">無料で申し込む</a>
+                    </div>
+                    <p class="cta__note">送料無料、査定無料、キャンセルOK</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <img src="img/logo-white.svg" alt="万代" width="100">
+                </div>
+                <p class="footer__copyright">&copy; Mandai Co., Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- スマホ追従CTA -->
+    <div class="fixed-cta u-sp-only">
+        <a href="#contact" class="btn btn--primary">無料で宅配買取を申し込む</a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
